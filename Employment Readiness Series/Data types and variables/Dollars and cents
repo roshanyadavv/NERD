@@ -1,0 +1,13 @@
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    int fd , fc , sd, sc ;
+    cin >> fd >> fc >> sd >> sc ;
+    int total_cents = fc+sc ;
+    int total_dollars = fd + sd + total_cents/100 ;
+    int remaining_cents = total_cents%100 ;
+    cout << total_dollars << endl << remaining_cents ;
+    return 0 ;
+}

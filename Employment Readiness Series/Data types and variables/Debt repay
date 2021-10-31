@@ -1,0 +1,18 @@
+
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int p,r,t;
+    cin>>p>>r>>t;
+    float interest,amount,discount,finalsettlement;
+    interest=(p*r*t)/100.0;
+    cout<<fixed<<setprecision(2)<<interest<<endl;
+    amount=interest+p;
+    cout<<fixed<<setprecision(2)<<amount<<endl;
+    discount=0.02*interest;
+    cout<<fixed<<setprecision(2)<<discount<<endl;
+    finalsettlement=amount-discount;
+    cout<<fixed<<setprecision(2)<<finalsettlement<<endl;
+    return 0;
+}

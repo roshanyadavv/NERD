@@ -1,0 +1,11 @@
+
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int n , days = 0 ;
+    cin >> n ;
+    days = n + int(sqrt(n)) + 1 ;
+    cout << days ;
+    return 0 ;
+} 

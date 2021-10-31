@@ -1,0 +1,14 @@
+
+#include <bits/stdc++.h>
+using namespace std ;
+
+int main()
+{
+    int r , c , t ;
+    cin >> r >> c >> t ;
+    if(t%c == 0 || t%c == 1 || t<=c || ((t>(r-1)*c)&&(t<=r*c)))
+    cout << "Yes" ;
+    else 
+    cout << "No" ;
+    return 0 ;
+} 
