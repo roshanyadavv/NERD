@@ -1,0 +1,7 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+cout <<"Welcome to Examly Event Management System" <<endl;
+return 0;
+}

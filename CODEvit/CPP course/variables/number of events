@@ -1,0 +1,9 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int num_of_events;
+    cin >> num_of_events;
+    cout << "Number of events hosted in Codissia is "<<num_of_events ;
+    return 0;
+}

@@ -1,0 +1,14 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    float n;
+    int x=0;
+    cin >> n;
+    
+    x=(n-800)/130;
+    
+    cout<<"Number of weekday hours is "<<x+10<<endl;
+    cout<<"Number of weekend hours is "<<x<<endl;
+    return 0;
+}

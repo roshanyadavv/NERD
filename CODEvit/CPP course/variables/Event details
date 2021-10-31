@@ -1,0 +1,20 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+   char str[50],type[50];
+   char choice;
+   int num_of_people;
+   float expenses;
+ cin.getline(str,50);
+ cin >> type;
+ cin >> num_of_people;
+ cin >> choice ;
+ cin >> expenses;
+cout << "Event Name :" << str;
+cout <<"\nEvent Type :" <<type;
+cout <<"\nExpected Count :"<<num_of_people;
+cout <<"\nPaid Entry : "<<choice;
+cout <<"\nProjected Expense :"<< expenses<<"L";
+return 0;
+}
