@@ -1,0 +1,18 @@
+#include<iostream>
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+int show1,show2,show3;
+float rating1,rating2,rating3,tot,result;
+cin>> show1;
+cin>>rating1;
+cin>>show2;
+cin>>rating2;
+cin>>show3;
+cin>>rating3;
+tot=(show1*rating1)+(show2*rating2)+(show3*rating3);
+result=tot/(show1+show2+show3);
+cout<<fixed<<setprecision(2)<<result;
+return 0;
+}
