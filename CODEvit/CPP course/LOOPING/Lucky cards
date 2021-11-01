@@ -1,0 +1,43 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n,i,j,c1=0,c2=0,c3=0,k;
+    cin>>n;
+    int a[n];
+    for(i=0;i<n;i++)
+    {
+        cin>>a[i];
+        if(a[i]==1){a[i]=14;}
+    }
+    for(i=0;i<n;i++)
+    {
+        k=a[i]%10;
+        if((a[i]>10)&&(i+k<n))
+        {
+            for(j=1;j<=k;j++)
+            {
+                if(a[i+j]<11)
+                {
+                    c1++;
+                }
+            }
+            if(c1==k)
+            {
+                if(i%2==0)
+                {
+                    cout<<"Player A scores"<<c1<<"point(s)\n";
+                    c2=c2+k;
+                }
+                else
+                {
+                    cout<<"Player B scores"<<c1<<"point(s)\n";
+                    c3=c3+k;
+                }
+            }
+            c1=0;
+        }
+    }
+    cout<<"Player A:"<<c2<<"point(s)\nPlayer B:"<<c3<<"point(s)";
+    return 0;
+}
