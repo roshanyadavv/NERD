@@ -1,0 +1,14 @@
+#include<iostream>
+#include<iomanip>
+using namespace std;
+int main()
+{
+    int x,y,length;
+    double cx,cy;
+    cin>>x;
+    cin>>y;
+    cin>>length;
+    cx = x+(double)(length/(double)2.0);
+    cy = y+(double)(length/(double)2.0);
+    cout<<fixed<<setprecision(2)<<cx<<" "<<cy;
+}
