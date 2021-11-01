@@ -1,0 +1,18 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n,i,j,k=2,s=0;
+    cin>>n;
+    for(i=0;i<n;i++)
+    {
+        for(j=2;j<=k/2;j++)
+        {
+            if(k%j==0){s=1;break;}
+        }
+        if(s==0){cout<<k<<" ";}
+        else{i--;}
+        k++;s=0;
+    }
+    return 0;
+}
