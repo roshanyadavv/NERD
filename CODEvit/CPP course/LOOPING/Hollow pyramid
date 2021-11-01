@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n,i,j,k;
+    cin>>n;
+    k=(2*n)-1;
+    for(i=n;i>0;i--)
+    {
+        for(j=1;j<=k;j++)
+        {
+            if((j==i)||(j==k-i+1)||(i==1)){cout<<"*";}
+            else if((j<i)||(j>k-i)){cout<<"b";}
+            else{cout<<"i";}
+        }
+        cout<<"\n";
+    }
+    return 0;
+}
