@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int num,n,i,l;
+    cin>>num;
+    if(num>=10)
+    {
+    n=num%10;
+    l=num;
+    for(i=0;num>0;i++)
+    {
+        num=num/10;
+        if(num>0){l=num;}
+    }
+    (l>=n)?cout<<l-n:cout<<n-l;
+    }
+    else
+    {
+        cout<<"Invalid Input";
+    }
+}
