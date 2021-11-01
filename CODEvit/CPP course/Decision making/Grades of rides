@@ -1,0 +1,32 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+int hurl_factor,spin_factor,speed_factor;
+cin>>hurl_factor>>spin_factor>>speed_factor;
+if(hurl_factor>50 && spin_factor>60 && speed_factor>100)
+{
+cout<<"10";
+}
+  else if(hurl_factor>50 && spin_factor>60)
+  {
+  cout<<"9";
+  }
+    else if(spin_factor>60 && speed_factor>100)
+    {
+    cout<<"8";
+    }
+    else if(hurl_factor>50 && speed_factor>100)
+    {
+    cout<<"7";
+    }
+    else if(hurl_factor>50 || spin_factor>60 || speed_factor>100)
+    {
+    cout<<"6";
+    }
+    else
+    {
+    cout<<"5";
+    }
+    return 0;
+    }

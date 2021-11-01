@@ -1,5 +1,7 @@
 {
     "files.associations": {
-        "event details": "cpp"
-    }
+        "event details": "cpp",
+        "grades of rides": "cpp"
+    },
+    "C_Cpp.errorSquiggles": "Disabled"
 }
