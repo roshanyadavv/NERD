@@ -1,0 +1,32 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int p,g,r,o,t,i,j,k,l,min=10000,c=0,x;
+    cin>>p>>g>>r>>o>>t;
+    for(i=0;i<=t;i++)
+    {
+        for(j=0;j<=t;j++)
+        {
+            for(k=0;k<=t;k++)
+            {
+                for(l=0;l<=t;l++)
+                {
+                    if(((p*i)+(g*j)+(r*k)+(o*l))==t)
+                    {
+                        cout<<"# of PINK is "<<i<<" # of GREEN is "<<j<<" # of RED is "<<k<<" # of ORANGE is "<<l<<endl;
+                        c++;
+                        x=i+j+k+l;
+                        if(min>x)
+                        {
+                            min=x;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    cout<<"Total combinations is "<<c<<endl;
+    cout<<"Minimum number of tickets to print is "<<min;
+    return 0;
+}
