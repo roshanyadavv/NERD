@@ -1,0 +1,22 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+   int brand,food,travel,logistics;double tot_exp=0.00;
+   double branding_exp_per=0.00,travel_exp_per=0.00,food_exp_per=0.00,logistics_exp_per=0.00;
+ cin >> brand;
+ cin >> travel;
+ cin >> food;
+ cin >> logistics;
+tot_exp= brand + travel + food + logistics;
+branding_exp_per=(brand/tot_exp)*100;
+travel_exp_per=(travel/tot_exp)*100;
+food_exp_per=(food/tot_exp)*100;
+logistics_exp_per=(logistics/tot_exp)*100;
+cout << fixed << setprecision(2)<<"Total expenses : Rs."<< tot_exp;
+cout <<fixed << setprecision(2)<<"\nBranding expenses percentage : "<<branding_exp_per<<"%";
+cout <<fixed << setprecision(2)<<"\nTravel expenses percentage : "<<travel_exp_per<<"%";
+cout <<fixed << setprecision(2)<<"\nFood expenses percentage : "<<food_exp_per<<"%";
+cout <<fixed << setprecision(2)<<"\nLogistics expenses percentage : "<<logistics_exp_per<<"%";
+return 0;
+}
