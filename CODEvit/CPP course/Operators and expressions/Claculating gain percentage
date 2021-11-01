@@ -1,0 +1,15 @@
+#include<iostream>
+#include<iomanip>
+using namespace std;
+int main()
+{
+    int price,repair,sp,cp,gain;
+    double gainpercent;
+    cin>>price;
+    cin>>repair;
+    cin>>sp;
+    cp = price+repair;
+    gain = sp-cp;
+    gainpercent = ((double)gain/(double)cp) *100;
+    cout<<fixed<<setprecision(2)<<gainpercent;
+}
