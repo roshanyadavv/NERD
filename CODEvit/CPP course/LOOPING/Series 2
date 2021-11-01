@@ -1,0 +1,13 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n,i,m=20;
+    cin>>n;
+    for(i=0;i<n;i++)
+    {
+        cout<<m<<" ";
+        m=m+40+(i*4);
+    }
+    return 0;
+}
