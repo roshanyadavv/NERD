@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+char ticket;
+cin>>ticket;
+switch(ticket)
+{
+case 'E':cout<<"Early Bird Ticket";
+break;
+case 'e':cout<<"Early Bird Ticket";
+break;
+case 'D':cout<<"Discount Ticket";
+break;
+case 'd':cout<<"Discount Ticket";
+break;
+case 'V':cout<<"VIP Ticket";
+break;
+case 'v':cout<<"VIP Ticket";
+break;
+case 'S':cout<<"Standard Ticket";
+break;
+case 's':cout<<"Standard Ticket";
+break;
+case 'C':cout<<"Child Ticket";
+break;
+case 'c':cout<<"Child Ticket";
+break;
+}
+return 0;
+}
