@@ -7,8 +7,8 @@ int main()
     day1=(tot*2)/7;
     day2=day1*2;
     day3=day1/2;
-    cout<<"Number of attendees on day 1 : "<<day1;
-    cout<<"Number of attendees on day 2 : "<<day2;
-    cout<<"Number of attendees on day 3 : "<<day3;
+    cout<<"Number of attendees on day 1 : "<<day1<<endl;
+    cout<<"Number of attendees on day 2 : "<<day2<<endl;
+    cout<<"Number of attendees on day 3 : "<<day3<<endl;
     return 0;
 }
